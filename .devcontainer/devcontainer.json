@@ -11,6 +11,13 @@
 	"runArgs": [
 		"--gpus=all"
 	],
+	"mounts": [
+		{
+			"source": "nix",
+			"target": "/nix",
+			"type": "volume"
+		}
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [
