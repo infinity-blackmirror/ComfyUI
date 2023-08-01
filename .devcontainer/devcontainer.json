@@ -1,0 +1,27 @@
+{
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true
+		},
+		"ghcr.io/devcontainers/features/python": {
+			"version": "3.11"
+		}
+	},
+	"runArgs": [
+		"--gpus=all"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"yzhang.markdown-all-in-one",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"hbenl.vscode-test-explorer",
+				"bungcip.better-toml",
+				"tamasfe.even-better-toml",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
+}
